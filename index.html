@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"/>
+  <link rel="stylesheet" href="Styles/general.css">
+  <link rel="stylesheet" href="Styles/media.css">
+  <link rel="shortcut icon" href="Images/websitelogo.png" type="image/x-icon">
+  <title>Teisha Lou | Experienced Voice Actor for Video Games, Animation and More </title>
+  <meta name="description" content="Teisha Lou is a British, BIPOC, LGBTQ+ voiceover artist,
+  Experienced in Video Games, Animation and more. Equipped with a Broadcast-quality home studio."/>
+  <link rel="canonical" href="https://teishalou.com"/>
+
+  <meta property="og:site_name" content="Teisha Lou" />
+  <meta property="og:title" content="Teisha Lou | Experienced Voice Actor for Video Games, Animation and More"/>
+  <meta property="og:url" content="https://teishalou.com" />
+  <meta property="og:type" content="website" />
+  <meta property="og-description" content="Teisha Lou is a British, BIPOC, LGBTQ+ voiceover artist,
+  Experienced in Video Games, Animation, Commercial and more.
+  With complete versatility in styles, accents, voices and 
+  equipped with a Broadcast Quality Home Studio." />
+</head>
+
+
+<body>
+  <header>
+    <div class="header-parent">
+        <h1 id="home"> TEISHA LOU </h1>
+        <nav> 
+          <p class="nav-btn" onclick="scrollHome()"> HOME </p>
+          <p class="nav-btn odd-btn" onclick="scrollStudio()"> STUDIO </p>
+          <p class="nav-btn"  onclick="scrollAbout()"> ABOUT</p>
+          <p class="nav-btn odd-btn" onclick="scrollResume()"> RESUME </p>
+          <p class="nav-btn" id="contact-btn" onclick="scrollContact()"> CONTACT </p>
+        </nav>
+      </div>
+  </header>
+
+  <div class="dropdown-toggle">
+    <img class="dropdown-open" src="Images/dropdown-btn.svg" alt="Dropdown Toggle Button">
+  </div>
+
+  <div  onclick="modeSwitch()" class="mode-toggle">
+    <img src="Images/mode-toggle.svg" alt="Light or Dark Mode toggle">
+  </div>
+  
+  <div class="dropdown-menu">
+    <p> <a href="#home"> HOME </a> </p>
+    <p> <a href="#studio"> STUDIO </a> </p>
+    <p> <a href="#about"> ABOUT </a> </p>
+    <p> <a href="#resume"> RESUME </a> </p>
+    <p class="dropdown-contact-btn"> <a href="#contact"> CONTACT </a> </p>
+
+    <div  onclick="modeSwitch()" class="dropdown-mode-toggle">
+      <img src="Images/mode-toggle.svg" alt="Light or Dark Mode toggle">
+    </div>
+  </div>
+
+  <main>
+    <article class="landing-parent"> 
+      <div class="landing-left">
+      <h2 class="bio-text"> <span> BIPOC </span> and <span> LGBTQ </span> voice actor from the <span> United Kingdom. </span> </h2>
+      <p class="bio-text"> <span>Broadcast-Quality studio,</span> formal training and experience in Animation, Video games and more. </p>
+      <p class="bio-text"> Able to perform in a wide variety of accents and styles.
+        <span>Vocal Range:</span> Androgynous, Female Adult, Female Teen, Male Child / High to Medium-Low Voices.</p> 
+        <p class="bio-text"> Please email <span> <a href="mailto:teishalouva@outlook.com" target="_blank"> teishalouva@outlook.com </span></a> or use the form below for an audition or quote. </p>
+      <div class="social-media">
+        <a href="https://x.com/vocalouu" target="_blank"> <img class="social-icon" src="Images/purpletwt.svg" alt="Twitter Icon"> </a>
+        <a href="https://www.imdb.com/name/nm16236207/?ref_=tt_cl_t_17" target="_blank"> <img class="social-icon" id="imdb" src="Images/purpleimdb.svg" alt="IMDB Icon"> </a>
+      </div>
+    </div>
+
+
+      <div class="landing-right">
+
+        <div class="demo-container">
+          <div class="demo-left">
+            <div id="ctrl-one" class="ctrl-btn" onclick="playPauseOne()">
+              <img id="play" src="Images/play.svg" alt="Play or Pause Button">
+              <img id="pause" class="hidden" src="Images/pause.svg" alt="Pause Button">
+            </div>
+            <div class="demo-label">
+              <p class="demo-title" > INTERACTIVE DEMO </p>
+            </div>
+          </div>
+          <div class="demo-dl">
+            <a href="Audio/TeishaLou_InteractiveReel.mp3" download> <p> DOWNLOAD </p> </a>
+          </div>
+          <input id="progress-one" class="demo-progress" type="range" value="0">
+          <audio id="audio-one" src="Audio/TeishaLou_InteractiveReel.mp3"> </audio>
+        </div>
+
+        <div class="demo-container demo-odd">
+          <div class="demo-left">
+            <div id="ctrl-two" class="ctrl-btn" onclick="playPauseTwo()">
+              <img id="play-two" src="Images/play.svg" alt="Play or Pause Button">
+              <img id="pause-two" class="hidden" src="Images/pause.svg" alt="Pause Button">
+            </div>
+            <div class="demo-label">
+              <p class="demo-title" > COMMERCIAL SAMPLE </p>
+            </div>
+          </div>
+          <div class="demo-dl">
+            <a href="Audio/TeishaLou_UKCommercialSample.mp3" download> <p> DOWNLOAD </p> </a>
+          </div>
+          <input id="progress-two" class="demo-progress" type="range" value="0">
+          <audio id="audio-two" src="Audio/TeishaLou_UKCommercialSample.mp3"> </audio>
+        </div>
+
+        <div class="demo-container">
+          <div class="demo-left">
+            <div id="ctrl-three" class="ctrl-btn" onclick="playPauseThree()">
+              <img id="play-three" src="Images/play.svg" alt="Play or Pause Button">
+              <img id="pause-three" class="hidden" src="Images/pause.svg" alt="Pause Button">
+            </div>
+            <div class="demo-label">
+              <p class="demo-title" > HOME STUDIO SAMPLE </p>
+            </div>
+          </div>
+          <div class="demo-dl">
+            <a href="Audio/TeishaLou_StudioTour.mp3" download> <p> DOWNLOAD </p> </a>
+          </div>
+          <input id="progress-three" class="demo-progress" type="range" value="0">
+          <audio id="audio-three" src="Audio/TeishaLou_StudioTour.mp3"> </audio>
+        </div>
+
+        <div class="demo-accent"></div>
+    </article> 
+
+    <div id="studio"  class="studio--wrapper"> 
+      <article class="studio-parent">
+        <div class="studio-container">
+          <div class="title">
+            <img src="Images/equipment.svg" alt="Microphone Icon">
+            <p> EQUIPMENT </p>
+          </div>
+            <div class="equipment-list">
+              <p> NEUMANN TLM103 </p>
+              <p> SOLID STATE LOGIC 2 </p>
+              <p> BEYERDYNAMIC D770 </p>
+              <p> REAPER DAW </p>
+              <p> BROADCAST QUALITY STUDIO <br> NOISE FLOOR -65dB average</p>
+            </div>
+        </div>
+
+        <div class="studio-container">
+          <div class="title">
+            <img src="Images/format.svg" alt="Format Icon">
+            <p> FORMAT </p>
+          </div>
+          <div class="format-list">
+            <p> .mp3, .wav, .ogg <br> 16 or 24 bit, 44.1khz or 48khz </p>
+            <p> Delivery via Google <br> Drive, Dropbox, Discord,<br> Email etc. </p>
+          </div>
+        </div>
+
+        <div class="studio-container">
+          <div class="title">
+            <img src="Images/wifi.svg" alt="Connectivity Icon">
+            <p> CONNECTIVITY </p>
+          </div>
+          <div class="connectivity-list">
+            <p> Standard Connectivity via <br> Discord, Skype, Zoom, <br> Source Nexus</p>
+            <p> Please get in contact for any  <br> specific requests and <br> requirements. </p>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <article id="about" class="about-parent">
+      <div class="about-left">
+        <img src="Images/TEI-HEADSHOT.png" alt="Teisha Lou headshot">
+      </div>
+      <div class="about-right">
+        <p> <span> Teisha Lou </span> is a nonbinary voiceover artist from the United Kingdom, with five years of acting experience and equipped with a <span> broadcast-quality home studio. </span>
+           They have provided voicework for Animations, Video games, Audio dramas and many more. </p>
+        <p>  
+          Their voice has been described as <span> youthful, warm and smooth </span> and their versatility allows them to cater to a wide
+           variety of character types, playing ages and accents. From <span> enchanting guardians, </span> to your <span> bubbly girl-next-door </span>,  
+           they’re certain to have something in their arsenal for every project. <br> <br>
+           They studied Performing Arts Practice for Television and Film in London, but were eager to transfer everything they'd learned into voice over!
+           Click <a href="/Files/TeishaLou_VOResume.pdf" target="_blank" download> <span> here </span> </a> to view their full resume or view their demos above.
+          </p>
+
+        <p>When they aren’t in the booth, they spend their
+           time <span> designing and coding websites  </span>  (like this one!),
+           <span> drawing </span> or waiting hand and foot on their fluffy bundle of chaos, <span> Bruno. </span> </p>
+      </div>
+    </article>
+
+    <article class="gallery-parent">
+      <div class="gallery-header"> 
+        <p> Hover over or click an image to learn more! </p>
+      </div>
+      <div id="resume" class="gallery-img">
+
+       <a href="https://youtu.be/-zCftCWQTTs?si=bdNi-IxfJUS8ezA7" target="_blank"> <div class="notation">
+          <div class="gallery-child">
+            <img src="Images/celestial.png" alt="Celestial from Troubles, My Dear">
+            <p> Celestial &#10072; Troubles, My Dear! </p>
+          </div>
+        </div>
+        </a>
+
+        <a href="https://devilishmirry.itch.io/the-eyes-of-demi-darkreed-demo" target="_blank"> <div class="notation">
+          <div class="gallery-child">
+            <img src="Images/demidark.png" alt="Demi from The Eyes Of Demi Darkreed">
+            <p> Demi &#10072; The Eyes of Demi Darkreed </p>
+          </div>
+        </div>
+        </a>
+
+        <a href="https://www.webtoons.com/en/canvas/yellow-target/list?title_no=799502&webtoon-platform-redirect=true" target="_blank"> <div class="notation">
+          <div class="gallery-child">
+            <img src="Images/gills.png" alt="Gills from Yellow Target">
+            <p> Gills &#10072; Yellow Target </p>
+          </div>
+        </div>
+        </a>
+
+        <a href="https://store.steampowered.com/app/3228440/Project_Nihilum__Zero/t" target="_blank"> <div class="notation">
+          <div class="gallery-child">
+            <img src="Images/Caretaker.png" alt="Caretaker from Project Nihilum: Zero">
+            <p> Caretaker &#10072; Project Nihilum: Zero </p>
+          </div>
+        </div>
+        </a>
+
+        <a href="https://youtu.be/N5L3b2hTtlw?si=Y48yaptrL_TSkoSDt" target="_blank"> <div class="notation">
+          <div class="gallery-child">
+            <img src="Images/MoD.png" alt="Misfits of Dawnwood">
+            <p> Tillianne Osric &#10072; Misfits of Dawnwood </p>
+          </div>
+        </div>
+        </a>
+
+        <a href="https://youtu.be/uHK5fJtnQQc?si=IAC-Qy8mSVhZ-mf7&t=1" target="_blank"> <div class="notation">
+          <div class="gallery-child">
+            <img src="Images/eden.png" alt="Eden Audiodrama">
+            <p> Additional Voices &#10072; Eden Audiodrama </p>
+          </div>
+        </div>
+        </a>
+
+        <a href="https://x.com/FniaSP" target="_blank"> <div class="notation">
+          <div class="gallery-child">
+            <img src="Images/fredrika.png" alt="Fredrika from FNIA:SP">
+            <p> Fredrika &#10072; Five Nights in Anime:SP </p>
+          </div>
+        </div>
+        </a>
+
+        <a href="https://xcherry-sodax.itch.io/predators-syndrome-demo" target="_blank"> <div class="notation">
+          <div class="gallery-child">
+            <img src="Images/malvina.png" alt="Malvina from Predator's Syndrome">
+            <p> Malvina &#10072; Predator's Syndrome 18+ </p>
+          </div>
+        </div>
+        </a>
+      
+      </div>
+      <div class="resume-download"> 
+        <a href="/Files/TeishaLou_VOResume.pdf" target="_blank" download>  <button> DOWNLOAD FULL RESUME </button> </a>
+      </div>
+    </article>
+
+    <div id="contact" class="contact--wrapper"> 
+      <article class="contact-parent">
+        <div class="form-left">
+          <p> Like what you heard? Let’s get in touch!</p>
+          <p class="disclaimer"> PLEASE NOTE: Form is for business inquiries only </p>
+          <form id="form" action="https://api.web3forms.com/submit" method="POST">
+
+            <!--Insert secure email encryption code below -->
+            <input  type="hidden" name="access_key" value="a8a2454f-d2eb-4c53-a606-61156566b9b4">
+      
+            <!--Stops users needing to complete a Captcha, remove line to require one-->
+            <input type="checkbox" name="botcheck" id="" style="display: none;">
+      
+            <!--First name input-->
+              <input
+              type="text" 
+              id="fname" 
+              name="name" 
+              placeholder="FULL NAME*" 
+              required
+              oninvalid="this.setCustomValidity('First Name cannot be blank')"
+              oninput="this.setCustomValidity('')">
+      
+              <!--Email input-->
+              <input 
+              type="text" 
+              id="email-address" 
+              name="email" 
+              placeholder="EMAIL ADDRESS*"  
+              required
+              oninvalid="this.setCustomValidity('Email cannot be blank')"
+              oninput="this.setCustomValidity('')">
+      
+              <!--Email input-->
+              <input 
+              type="text" 
+              id="subject" 
+              name="subject" 
+              placeholder="SUBJECT*"  
+              required
+              oninvalid="this.setCustomValidity('Email cannot be blank')"
+              oninput="this.setCustomValidity('')">
+
+              <!--Message input-->
+              <textarea 
+              id="message" 
+              name="message" 
+              placeholder="MESSAGE..."  
+              required
+              oninvalid="this.setCustomValidity('Message cannot be blank')"
+              oninput="this.setCustomValidity('')"></textarea>
+          
+              <!--Submit button and processing message-->
+              <input id="send-button" type="submit" value="SUBMIT">
+              <div id="result"></div>
+      
+          </form>
+          <div class="social-media-black">
+            <a href="https://x.com/vocalouu" target="_blank"> <img class="social-icon-black" src="Images/blackimdb.svg" alt="IMDB logo in Black"> </a>
+            <a href="https://www.imdb.com/name/nm16236207/?ref_=tt_cl_t_17" target="_blank"> <img  class="social-icon-black" id="imdb-black" src="Images/blacktwitter.svg" alt="Twitter logo in Black"> </a>
+          </div>
+        </div>
+      </article>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>  ©2024  <span> Teisha Lou. </span>  All rights reserved  |   Website by <span> Teisha Lou </span> and <a href="https://emiliebrewer.com/" target="_blank"><span> Emilie Brewer </span> </a> </p>
+  </footer>
+
+  <script src="Script/script.js"></script>
+</body>
+</html>
