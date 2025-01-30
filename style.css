@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+h1, h2{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  color: #9439ef;
+  font-family: nunito sans;
+  font-size: 40px;
+  background-color: #19161e;
+  width: 100%;
+  height: 100VH;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+
+}
+
+.maintenance-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h2{
+  color: white;
+  font-size: 36px;
+}
+
+@media (max-width: 1000px){
+  h1 {
+    font-size: 50px;
+  }
+  h2{
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 600px){
+  h1 {
+    font-size: 30px;
+  }
+  h2{
+    font-size: 20px;
+  }
+
+}
